@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpor" content="width=device-width">
+        <title>Encriptador 1.0</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>  
+        <header>
+            <img id="logo" src="imagen/Logo.png">
+        </header> 
+        <main>
+            <section class="contenedor">
+                <div>
+                    <textarea id="txtIni" type="text" rows="6" cols="40"></textarea>
+                    <p id="ingtxt">Ingrese texto aqui</p>
+                    <div class="aclaracion">
+                        <img class="exclama" src="imagen/bi_exclamation-circle-fill.png" alt="Exclamación">
+                        <p id="txtaclara">Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="botones">
+                        <div class="encriptar">
+                            <button id="btnEncriptar">Encriptar</button>
+                        </div>
+                        <div class="desencriptar">
+                            <button id="btnDesencriptar">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="textoFinal">
+                    <textarea id="txtFin" type="text" rows="6" cols="40" ></textarea>
+                    <img class="imgChico" src="imagen/Muñeco.png" alt="Chico">
+                    <div class="copiar" style="visibility: hidden">
+                        <button id="btnCopiar">Copiar</button>    
+                    </div>
+                </div>
+                <div class="textosFin">
+                    <p id="ceromsj" style="visibility:hidden">Ningún mensaje fue encontrado</p>
+                    <p id="ingresarmsj" style="visibility:hidden">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </section>
+        </main>
+
+        <script src="textIn.js"></script>
+        <script src="botones.js"></script>
+
+    </body>
+
+</html>
